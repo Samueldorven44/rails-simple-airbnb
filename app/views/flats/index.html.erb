@@ -1,0 +1,21 @@
+<div class="header d-flex flex-column justify-content-center align-items-start">
+  <div class="header-text">
+    <h1>Explore the world</h1>
+    <p>Travel is the movement of people between distant geographical locations.</p>
+  </div>
+</div>
+
+<div class="container">
+  <h2 id="subtitle-cards-flats">Discover the world</h2>
+  <div class="cards-flats">
+    <% @flats.each do |flat| %>
+      <div class="flat-card">
+        <%= image_tag flat.image, alt: flat.name, class: "flat-image" %>
+        <h2><%= flat.name %></h2>
+        <p><strong>Address:</strong> <%= flat.address %></p>
+        <p><strong>Price per night:</strong> <%= flat.price_per_night %> €</p>
+        <p><strong>Number of guests:</strong> <%= flat.number_of_guests %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
