@@ -14,6 +14,7 @@ Flat.destroy_all
 puts "Creating flats..."
 Flat.create!(
   name: 'Light & Spacious Garden Flat London',
+  city: 'Londre, Angleterre',
   address: '10 Clifton Gardens London W9 1DT',
   description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 75,
@@ -22,7 +23,8 @@ Flat.create!(
 )
 
 Flat.create!(
-  name: 'Cozy Studio in Paris',
+  name: 'Cozy Studio whith beautiful view in Paris',
+  city: 'Paris, France',
   address: '25 Rue de la Paix, 75002 Paris',
   description: 'Charming studio in the heart of Paris, close to the Louvre and the Opera.',
   price_per_night: 120,
@@ -32,6 +34,7 @@ Flat.create!(
 
 Flat.create!(
   name: 'Modern Apartment with Sea View Barcelona',
+  city: 'Barcelone, Espagne',
   address: 'Passeig de Gràcia 101, 08008 Barcelona',
   description: 'Bright and modern apartment with stunning sea views, 5 minutes from the beach.',
   price_per_night: 95,
@@ -41,6 +44,7 @@ Flat.create!(
 
 Flat.create!(
   name: 'Rustic Mountain Cabin Chamonix',
+  city: 'Chamonix, France',
   address: '12 Route du Mont Blanc, 74400 Chamonix',
   description: 'Cozy wooden cabin in the mountains, perfect for skiing or hiking holidays.',
   price_per_night: 150,
